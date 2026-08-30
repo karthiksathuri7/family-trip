@@ -32,47 +32,218 @@
         <section class="hero">
             <div class="hero-content">
                 <h1>Plan Your Perfect Family Trip</h1>
-                <p>Discover amazing destinations and create unforgettable memories with your family.</p>
+                <p>Discover amazing places,creat your itinerary.</p>
+                <p>manage your budget and make beautiful memories with your family.</p>
             </div>
 
 <!------destination-->
 
 <div class="search-box">
         <div class="search-item">
-            <label for="Where do you want to go?>">Where do you want to go?</label>
+            <label for="destination">Where do you want to go?</label>
             <span class="search-icon">🔍</span>
-            <input type="text" placeholder="search destination">
+            <input type="text" id="destination" placeholder="search destination">
         </div>
         <!------checkin date-->
     
 <div class="search-item">
-    <label for="Check in" >check in</label>
     <span class="search-icon">📆</span>
-    <input type="date" placeholder="Add date">
+        <label for="check-in">Check In</label>
+        <input type="date" id="check-in">
 </div>
 <!-------check out date------>
 
-    <div class="search item">
-        <label for ="check out">Check Out</label>
+    <div class="search-item">
+    
         <span class="search-icon">📆</span>
-        <input type="date" placeholder="Add date">
+            <label for="check-out">Check Out</label>
+            <input type="date" id="check-out">
     </div>
-</div>
 <!----travellers-->
 
 <div class="search-item">
-    <label for="Travellers">Travellers</label>
-    <span class="search-icon">👥</span>
-    <p>2 Adults, 1 Child</p>
+     <span class="search-icon">👥</span>
+        <label for="travellers">Travellers</label>
+        <input type="number" id="travellers" name="travellers" min="1" max="10" value="1">
+        <p>2 Adults, 1 Child</p>
 </div>
 <!------search button------>
-<div class="search-item">
     <button class="search-btn">Search</button>
     <span class="search-icon">🔍</span>
 </div>
+ 
+<!--------trust matters---------->
+
+ <div class="hero-features">
+    <div>💰 Best Price Guarantee</div>
+    <div>🏨 Handpicked Hotels</div>
+    <div>🎧 24/7 Customer Support</div>
+    <div>🔒 Secure Booking</div>
+</div>
+ </section>
+
+ <section class="destinations-section">
+
+    <h2>Popular Destinations</h2>
+
+    <div class="destination-container">
+        <!-----kerala------->
+        <div class="destination-card">
+            <img
+            src="images/destinations/kerala.jpg"
+            alt="kerala"
+            >
+            <div class="destination-content">
+                <h3>Kerala</h3>
+                <p>Backwaters,nature & peaceful vibes</p>
+                <span>⭐</span>
+                <span>4.8</span>
+                <small>(1000+  reviews)</small>
+                <p class="price">₹9999/-</p>
+            </div>
+        </div>
+    <!-----------ooty---------->
+    <div class="destination-card">
+        <img
+        src="images/destinations/ooty.png"
+        alt="ooty"
+        >
+        <div class="destination-content">
+            <h3>Ooty</h3>
+            <p>Green hills,train rides & pleasent wheather</p>
+            <span>⭐</span>
+            <span>4.6</span>
+            <small>(1000+ reviews)</small>
+            <p class="price">₹7999/-</p>
+        </div>
     </div>
-        </section>
- </main>
-    <footer></footer>
+    <!---------kedarnath-------->
+    <div class="destination-card">
+        <img
+        src="images/destinations/kedarnath.png"
+        alt="Kedarnath"
+        >
+        <div class="destination-content">
+            <h3>Kedarnath</h3>
+            <p>Heaven is myth,Kedarnath is real "Har Har MahaDev"</p>
+            <span>⭐</span>
+            <span>4.9</span>
+            <small>(100000+ reviews)</small>
+            <p class="'price">₹12999/-</p>
+        </div>
+    </div>
+    <!--------rajasthan--------->
+    <div class="destination-card">
+        <img
+        src="images/destinations/rajasthan.jpeg"
+        alt="rajasthan"
+        >
+        <div class="destination-content">
+            <h3>Rajasthan</h3>
+            <p>Land of kings,legends,and endless golden dreams</p>
+            <span>⭐</span>
+            <span>4.6</span>
+            <small>(1000+ reviews)</small>
+            <p class="price">₹13999/-</p>
+        </div>
+    </div>
+    <!------maharashtra------->
+    <div class="destination-card">
+        <img
+        src="images/destinations/maharashtra.webp"
+        alt="waterfalls"
+        >
+        <div class="destination-content">
+            <h3>Maharashtra</h3>
+            <p>chasing the waterfalls in maharashtra</p>
+            <span>⭐</span>
+            <span>4.7</span>
+            <small>(100000 reviews)</small>
+            <p class="price">₹8955/-</p>
+        </div>
+    </div>
+    </div>
+ </section>
+
+ <section class="planner-section">
+    <h2>🧳Plan Your Trip</h2>
+    <p class="planner-description">Create your custom trip in just few steps</p>
+    <div class="trip-form">
+        <!----------destination--------->
+        <div class="form-group">
+            <label for="destination">Destination</label>
+            <input
+            type="text"
+            id="destination"
+            placeholder="Enter your destination"
+            >
+        </div>
+        <!------------no.of days------------->
+        <div class="form-group">
+            <label for="days">Number of days</label>
+            <input
+            type="number"
+            id="days"
+            placeholder="e.g:4"
+            >
+        </div>
+        <!--------------no. of people------------>
+        <div clas="form-group">
+            <label for="members">number of people</label>
+            <input
+            type="number"
+            id="people"
+            placeholder="e.g:4"
+            >
+        </div>
+        <!----------budget--------------->
+        <div class="form-group">
+            <label for="budget">Budget(₹)</label>
+            <input
+            type="number"
+            id="budget"
+            placeholder="e.g:5000"
+            >
+        </div>
+        <!-----------travel month--------->
+        <div class="form-group">
+            <label for="month">month</label>
+            <select id="month">
+                <option value="">select month</option>
+                <option>january</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+            </select>
+        </div>
+        <!--------------trip type-------------->
+
+        <div class="form-group">
+            <label for="trip-type">Trip Type</label>
+            <select id="type-type">
+               <option value="">select Trip Type</option>
+               <option>Family vaction</option>
+               <option>Bachealor/friends josh</option>
+               <option>Advanture</option>
+               <option>Beach</option>
+               <option>heritage</option>
+               <option>Trecking</option>
+               </select>
+        </div>
+
+
+        <button class="create-btn">create my trip ➤</button>
+
+    </div>
+ </section>
+    </main>
 </body>
-</html
+</html>
