@@ -1,67 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plan Your Trip-FamilyTrip</title>
+
+    <title>Plan Your Trip - FamilyTrip</title>
+
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
+    <header>
+
+    <nav class="navbar">
+
+        <div class="logo">✈ FamilyTrip</div>
+
+        <ul class="navigation-links">
+
+            <li><a href="../index.html">Home</a></li>
+
+            <li><a href="destinations.html">Destinations</a></li>
+
+            <li><a href="plan-trip.html">Plan Trip</a></li>
+
+            <li><a href="my-trip.html">My Trips</a></li>
+
+            <li><a href="about.html">About Us</a></li>
+
+        </ul>
+
+    </nav>
+
+</header>
     <main>
+
         <section class="plan-trip-page">
-            <h1>Plan Your perfect Trip </h1>
-            <p>  
-                Create your perfect dream family trip in just few steps.
-            </p>
-            <h2>Trip Details</h2>
 
-            <div class="trip-details">
-                <label>Destination</label>
-                <input type="text" placeholder="Enter your destination">
-            </div>
-            <div>
-                <label>Number of Days</label>
-                <input type="number" placeholder="E.g:4">
-            </div>
-            <div>
-                <label>Number of People</label>
-                <input type="number" placeholder="E.g:4">
-            </div>
-            <div>
-                <label>Budget</label>
-                <input type="number" placeholder="E.g:10000">   
+            <div class="plan-trip-header">
+                <h1>Plan Your Perfect Trip</h1>
+
+                <p>
+                    Create your perfect family trip in just a few steps.
+                </p>
             </div>
 
-            <div>
-                <label>Travel Month</label>
-                <select>
-                    <option value="january">January</option>
-                    <option value="february">February</option>
-                    <option value="march">March</option>
-                    <option value="april">April</option>
-                    <option value="may">May</option>
-                    <option value="june">June</option>
-                    <option value="july">July</option>
-                    <option value="august">August</option>
-                    <option value="september">September</option>
-                    <option value="october">October</option>
-                    <option value="november">November</option>
-                    <option value="december">December</option>
-                </select>
-            </div>
-            <div>
-                <label>Travel Type</label>
-                <select>
-                    <option value="family">Family</option>
-                    <option value="friends">Friends</option>
-                    <option value="couple">Couple</option>
-                    <option value="solo">Solo</option>
-                    <option value="adventure">Adventure</option>    
-                    <option value="Beach">Beach</option>
-                </select>
+
+            <div class="trip-box">
+
+                <h2>Trip Details</h2>
+
+                <div class="trip-details">
+
+                    <!-- Destination -->
+                    <div class="trip-field">
+                        <label for="destination">Destination</label>
+
+                        <input
+                            type="text"
+                            id="destination"
+                            placeholder="Enter your destination"
+                        >
+                    </div>
+
+
+                    <!-- Number of Days -->
+                    <div class="trip-field">
+                        <label for="days">Number of Days</label>
+
+                        <input
+                            type="number"
+                            id="days"
+                            placeholder="E.g: 4"
+                        >
+                    </div>
+
+
+                    <!-- Number of People -->
+                    <div class="trip-field">
+                        <label for="people">Number of People</label>
+
+                        <input
+                            type="number"
+                            id="people"
+                            placeholder="E.g: 4"
+                        >
+                    </div>
+
+
+                    <!-- Budget -->
+                    <div class="trip-field">
+                        <label for="budget">Budget</label>
+
+                        <input
+                            type="number"
+                            id="budget"
+                            placeholder="E.g: 10000"
+                        >
+                    </div>
+
+
+                    <!-- Travel Month -->
+                    <div class="trip-field">
+                        <label for="month">Travel Month</label>
+
+                        <select id="month">
+                            <option value="">Select month</option>
+                            <option value="january">January</option>
+                            <option value="february">February</option>
+                            <option value="march">March</option>
+                            <option value="april">April</option>
+                            <option value="may">May</option>
+                            <option value="june">June</option>
+                            <option value="july">July</option>
+                            <option value="august">August</option>
+                            <option value="september">September</option>
+                            <option value="october">October</option>
+                            <option value="november">November</option>
+                            <option value="december">December</option>
+                        </select>
+                    </div>
+
+
+                    <!-- Trip Type -->
+                    <div class="trip-field">
+                        <label for="trip-type">Trip Type</label>
+
+                        <select id="trip-type">
+                            <option value="">Select trip type</option>
+                            <option value="family">Family</option>
+                            <option value="adventure">Adventure</option>
+                            <option value="relaxation">Relaxation</option>
+                            <option value="honeymoon">Honeymoon</option>
+                            <option value="cultural">Cultural</option>
+                            <option value="nature">Nature</option>
+                        </select>
+                    </div>
+
+                </div>
+
             </div>
 
         </section>
+
     </main>
+
 </body>
+
 </html>
